@@ -1,0 +1,16 @@
+Employee_ID,Name,Age,Salary,City,Department,Performance_Score
+101,Rahul,22,30000,Bangalore,IT,4.5
+102,Priya,23,35000,bangalore,IT,4.2
+103,Ananya,,40000,Chennai,HR,4.8
+104,Ravi,25,50000,Chennai,HR,4.1
+105,Kiran,24,45000,Bangalore,IT,4.6
+105,Kiran,24,45000,Bangalore,IT,4.6
+106,Sneha,27,,Mumbai,Finance,4.3
+107,Arjun,26,1000000,mumbai,Finance,4
+108,Meena,,38000,Bangalore,it,4.7
+109,Vikram,29,55000,Delhi,Sales,
+110,Pooja,24,42000,delhi,Sales,4.4
+111,Amit,31,60000,Bangalore,IT,4.2
+112,Neha,28,,Mumbai,finance,4.5
+113,Suresh,30,58000,Chennai,HR,4.1
+114,Divya,23,36000,Bangalore,IT,4.9
