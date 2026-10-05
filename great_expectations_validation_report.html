@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Healthcare Data Quality Report</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    color: #176B87;
+}
+
+h2 {
+    color: #24527A;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8f5f7;
+}
+
+.pass {
+    color: green;
+    font-weight: bold;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Healthcare Data Quality Validation Report</h1>
+
+<p>
+Generated: 2026-10-05 19:41:34
+</p>
+
+<h2>Dataset Summary</h2>
+
+<p>
+Rows: 2000
+</p>
+
+<p>
+Columns: 15
+</p>
+
+<h2>Validation Results</h2>
+
+<p>
+Passed Expectations: 7
+</p>
+
+<p>
+Failed Expectations: 1
+</p>
+
+<table border="1" class="dataframe results">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Expectation</th>
+      <th>Status</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dataset must not be empty</td>
+      <td>PASSED</td>
+      <td>2000 records found</td>
+    </tr>
+    <tr>
+      <td>Dataset must not contain duplicate rows</td>
+      <td>PASSED</td>
+      <td>0 duplicate rows</td>
+    </tr>
+    <tr>
+      <td>Dataset must not contain completely empty rows</td>
+      <td>PASSED</td>
+      <td>0 completely empty rows</td>
+    </tr>
+    <tr>
+      <td>Appointment ID must not be null</td>
+      <td>PASSED</td>
+      <td>0 missing IDs</td>
+    </tr>
+    <tr>
+      <td>Appointment ID must be unique</td>
+      <td>PASSED</td>
+      <td>0 duplicate IDs</td>
+    </tr>
+    <tr>
+      <td>Numeric values must not be negative</td>
+      <td>PASSED</td>
+      <td>0 negative values</td>
+    </tr>
+    <tr>
+      <td>Appointment status must not be null</td>
+      <td>FAILED</td>
+      <td>Status column not found</td>
+    </tr>
+    <tr>
+      <td>Department must not be null</td>
+      <td>PASSED</td>
+      <td>0 missing department values</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>DAMA Scorecard</h2>
+
+<table>
+
+<tr>
+<th>Dimension</th>
+<th>Score</th>
+</tr>
+
+<tr>
+<td>Accuracy</td>
+<td>4/5</td>
+</tr>
+
+<tr>
+<td>Completeness</td>
+<td>4/5</td>
+</tr>
+
+<tr>
+<td>Consistency</td>
+<td>4/5</td>
+</tr>
+
+<tr>
+<td>Timeliness</td>
+<td>4/5</td>
+</tr>
+
+<tr>
+<td>Uniqueness</td>
+<td>4/5</td>
+</tr>
+
+<tr>
+<td>Validity</td>
+<td>4/5</td>
+</tr>
+
+
+</table>
+
+<h3>Overall Score: 80.0%</h3>
+
+<h2>Top Improvement Recommendations</h2>
+
+<ol>
+
+<li>Automate duplicate-record detection.</li>
+
+<li>Validate mandatory fields before dashboard loading.</li>
+
+<li>Standardise appointment status and department values.</li>
+
+<li>Monitor data freshness regularly.</li>
+
+<li>Mask or tokenise patient PII.</li>
+
+<li>Use automated data-quality validation before BI reporting.</li>
+
+</ol>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+Expectation,Status,Details
+Dataset must not be empty,PASSED,2000 records found
+Dataset must not contain duplicate rows,PASSED,0 duplicate rows
+Dataset must not contain completely empty rows,PASSED,0 completely empty rows
+Appointment ID must not be null,PASSED,0 missing IDs
+Appointment ID must be unique,PASSED,0 duplicate IDs
+Numeric values must not be negative,PASSED,0 negative values
+Appointment status must not be null,FAILED,Status column not found
+Department must not be null,PASSED,0 missing department values

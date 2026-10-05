@@ -1,0 +1,16 @@
+Column,Classification,Recommended Protection
+appointment_id,Non-PII,No masking required
+patient_id,PII,Tokenisation
+specialty,Non-PII,No masking required
+department,Non-PII,No masking required
+booking_date,Sensitive,Restricted access
+booking_hour,Non-PII,No masking required
+appointment_date,Sensitive,Restricted access
+appointment_hour,Non-PII,No masking required
+reason,Non-PII,No masking required
+doctor_id,Non-PII,No masking required
+no_show,Non-PII,No masking required
+wait_time_mins,Non-PII,No masking required
+consultation_mins,Non-PII,No masking required
+insurance_type,Non-PII,No masking required
+patient_age_group,Non-PII,No masking required

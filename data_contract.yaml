@@ -1,0 +1,28 @@
+dataset:
+  name: healthcare_appointments
+  version: "1.0"
+  description: Healthcare appointment dataset
+
+producer:
+  name: Student
+  role: Data Analyst
+
+consumer:
+  name: BI Dashboard
+  purpose: Healthcare operational reporting
+
+sla:
+  freshness: "Updated daily"
+  quality_target: "At least 95% valid records"
+
+quality_rules:
+  - Dataset must not be empty
+  - Appointment ID must not be null
+  - Appointment ID must be unique
+  - Numeric values must not be negative
+  - Appointment status must not be null
+  - Department must not be null
+
+security:
+  pii_handling: "Mask or tokenise sensitive patient information"
+  access: "Restricted to authorised users"
